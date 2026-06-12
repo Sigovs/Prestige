@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Imports — Quiet Power Since 1977</title>
+    <meta name="description" content="Prestige Imports — a refined marketplace for luxury, exotic, and high-end enthusiast vehicles. South Florida, since 1977.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Inter:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+    <link rel="stylesheet" href="assets/css/home-v2.css">
+</head>
+<body class="page-home-v2">
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index_2.html" class="logo" aria-label="Prestige Imports — Home">
+                <img src="assets/images/logo.svg" alt="Prestige Imports">
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#inventory" class="site-nav__link">Inventory</a>
+                <a href="#sell" class="site-nav__link">Sell Your Vehicle</a>
+                <a href="#service" class="site-nav__link">Service</a>
+                <a href="#store" class="site-nav__link">Store</a>
+                <a href="#research" class="site-nav__link">Research</a>
+                <a href="#about" class="site-nav__link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO — sticky-pinned within tall scroll runway -->
+        <section class="hero" data-scrub-video aria-label="Prestige Imports">
+        <div class="hero__sticky">
+            <div class="hero__bg" aria-hidden="true">
+                <video class="hero__video is-active" data-slide-video="0" autoplay muted loop playsinline preload="auto" disableremoteplayback>
+                    <source src="assets/videos/hero3.mp4" type="video/mp4">
+                </video>
+                <video class="hero__video" data-slide-video="1" muted loop playsinline preload="auto" disableremoteplayback>
+                    <source src="assets/videos/slider2.mp4" type="video/mp4">
+                </video>
+                <video class="hero__video" data-slide-video="2" muted loop playsinline preload="auto" disableremoteplayback>
+                    <source src="assets/videos/hero2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="hero__contact" aria-label="Contact">
+                <a href="tel:+13059531000" class="hero__contact-link">
+                    <i class="ph-thin ph-phone" aria-hidden="true"></i>
+                    <span>+1 (305) 953-1000</span>
+                </a>
+                <a href="https://maps.google.com/?q=14780+Biscayne+Blvd+North+Miami+Beach+FL" class="hero__contact-link" target="_blank" rel="noopener">
+                    <i class="ph-thin ph-map-pin" aria-hidden="true"></i>
+                    <span>14780 Biscayne Blvd · North Miami Beach, FL</span>
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="hero__inner" data-hero-slides>
+
+                    <article class="hero__slide is-active" data-slide-index="0">
+                        <h1 class="hero__headline">
+                            <span class="hero__headline-primary">Not just selling cars.</span>
+                            <span class="hero__headline-secondary">Providing lifestyles.</span>
+                        </h1>
+                        <p class="hero__intro">A second-generation, family-owned dealership offering Lamborghini, Pagani, Lotus, Karma, and Czinger — alongside a curated inventory of pre-owned exotics for collectors and enthusiasts.</p>
+                        <div class="hero__actions">
+                            <a href="#inventory" class="hero__cta-link">
+                                <span>Browse the collection</span>
+                                <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="hero__slide" data-slide-index="1">
+                        <h1 class="hero__headline">
+                            <span class="hero__headline-primary">Officially authorized.</span>
+                            <span class="hero__headline-secondary">Five brands. One house.</span>
+                        </h1>
+                        <p class="hero__intro">Prestige Imports is the South Florida authorized dealer for Lamborghini, Pagani, Lotus, Karma, and Czinger — five distinguished brands represented under one roof.</p>
+                    </article>
+
+                    <article class="hero__slide" data-slide-index="2">
+                        <h1 class="hero__headline">
+                            <span class="hero__headline-primary">Past the keys.</span>
+                            <span class="hero__headline-secondary">The relationship begins.</span>
+                        </h1>
+                        <p class="hero__intro">Concierge support that extends past the transaction — pickup, delivery, enclosed transport, restoration, and coverage. The right vehicle deserves the right experience.</p>
+                        <div class="hero__actions">
+                            <a href="#sell" class="hero__cta-link">
+                                <span>Sell Your Exotic Car</span>
+                                <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Brand row — pinned at bottom of hero, only revealed on slide 2 -->
+            <ul class="hero__brands" aria-label="Authorized brands">
+                <li class="hero__brand">
+                    <a href="#inventory" class="hero__brand-link" aria-label="View Pagani inventory">
+                        <img src="assets/images/pagani%20_logo.svg" alt="Pagani">
+                        <span class="hero__brand-sub">
+                            <span class="hero__brand-sub-hover">View Inventory <i class="ph-thin ph-caret-right" aria-hidden="true"></i></span>
+                        </span>
+                    </a>
+                </li>
+                <li class="hero__brand">
+                    <a href="#inventory" class="hero__brand-link" aria-label="View Lamborghini inventory">
+                        <img src="assets/images/lambo_logo.svg" alt="Lamborghini">
+                        <span class="hero__brand-sub">
+                            <span class="hero__brand-sub-hover">View Inventory <i class="ph-thin ph-caret-right" aria-hidden="true"></i></span>
+                        </span>
+                    </a>
+                </li>
+                <li class="hero__brand">
+                    <a href="#inventory" class="hero__brand-link" aria-label="View Lotus inventory">
+                        <img src="assets/images/lotus_logo.png" alt="Lotus">
+                        <span class="hero__brand-sub">
+                            <span class="hero__brand-sub-hover">View Inventory <i class="ph-thin ph-caret-right" aria-hidden="true"></i></span>
+                        </span>
+                    </a>
+                </li>
+                <li class="hero__brand">
+                    <a href="#inventory" class="hero__brand-link" aria-label="View Karma inventory">
+                        <img src="assets/images/karma_logo.svg" alt="Karma">
+                        <span class="hero__brand-sub">
+                            <span class="hero__brand-sub-hover">View Inventory <i class="ph-thin ph-caret-right" aria-hidden="true"></i></span>
+                        </span>
+                    </a>
+                </li>
+                <li class="hero__brand">
+                    <a href="#inventory" class="hero__brand-link" aria-label="View Czinger inventory">
+                        <img src="assets/images/czinger_logo.svg" alt="Czinger">
+                        <span class="hero__brand-sub">
+                            <span class="hero__brand-sub-hover">View Inventory <i class="ph-thin ph-caret-right" aria-hidden="true"></i></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Slide pagination — bottom-left, numerals + hairlines -->
+            <nav class="hero__pagination" data-hero-pagination aria-label="Hero slides">
+                <button type="button" class="hero__dot is-active" data-slide-to="0" aria-label="Slide 1">
+                    <span class="hero__dot-num">01</span>
+                    <span class="hero__dot-line" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="hero__dot" data-slide-to="1" aria-label="Slide 2">
+                    <span class="hero__dot-num">02</span>
+                    <span class="hero__dot-line" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="hero__dot" data-slide-to="2" aria-label="Slide 3">
+                    <span class="hero__dot-num">03</span>
+                    <span class="hero__dot-line" aria-hidden="true"></span>
+                </button>
+            </nav>
+
+            <!-- Slide nav — small prev/next buttons, right edge mid-height -->
+            <div class="hero__nav" data-hero-nav>
+                <button type="button" class="hero__nav-btn" data-hero-prev aria-label="Previous slide">
+                    <i class="ph-thin ph-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="hero__nav-btn" data-hero-next aria-label="Next slide">
+                    <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- INVENTORY — featured cars in light editorial, sticky-pinned on scroll -->
+        <section class="section section--inventory" id="inventory" aria-labelledby="inventory-heading" data-reveal>
+        <div class="section--inventory__sticky">
+            <div class="container">
+                <header class="inventory__header">
+                    <div class="inventory__header-text">
+                        <span class="eyebrow-stamp">Featured Inventory</span>
+                        <h2 class="inventory__heading" id="inventory-heading">
+                            <span class="inventory__heading-primary">A Curated Selection</span>
+                            <span class="inventory__heading-secondary">Of Premium Vehicles.</span>
+                        </h2>
+                        <p class="inventory__intro">New Lamborghini, Pagani, Lotus, Karma, and Czinger — factory-new inventory from the brands we represent as an authorized dealer.</p>
+                    </div>
+                    <a href="#" class="inventory__cta">
+                        <span>Explore the collection</span>
+                        <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                    </a>
+                </header>
+
+                <ul class="inventory__grid" aria-label="Featured vehicles">
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/2024%20Lamborghini%20Revuelto.jpg" alt="2024 Lamborghini Revuelto" loading="lazy">
+                                <span class="vehicle-card__status">
+                                    <span class="vehicle-card__status-dot" aria-hidden="true"></span>
+                                    Sale Pending
+                                </span>
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2024 Lamborghini Revuelto</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>120 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>645,000</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/2024%20Pagani%20Utopia.webp" alt="2024 Pagani Utopia" loading="lazy">
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2024 Pagani Utopia</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>85 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>2,900,000</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Manual</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/2024%20Czinger%2021C.webp" alt="2024 Czinger 21C" loading="lazy">
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2024 Czinger 21C</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>60 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>2,000,000</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/2023_Lamborghini_Huracan_STO_1.jpg" alt="2023 Lamborghini Huracán STO" loading="lazy">
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2023 Lamborghini Huracán STO</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>1,800 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>412,000</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/Karma%20GS-6.avif" alt="2024 Karma GS-6" loading="lazy">
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2024 Karma GS-6</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>45 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>96,000</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Automatic</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="vehicle-card">
+                            <div class="vehicle-card__media">
+                                <img src="assets/images/2024%20Lotus%20Emira%20First%20Edition.avif" alt="2024 Lotus Emira First Edition" loading="lazy">
+                            </div>
+                            <div class="vehicle-card__body">
+                                <h3 class="vehicle-card__name">2024 Lotus Emira First Edition</h3>
+                                <ul class="vehicle-card__specs">
+                                    <li class="spec"><i class="ph-thin ph-gauge" aria-hidden="true"></i><span>450 mi</span></li>
+                                    <li class="spec"><i class="ph-thin ph-currency-dollar" aria-hidden="true"></i><span>108,500</span></li>
+                                    <li class="spec"><i class="ph-thin ph-gear-six" aria-hidden="true"></i><span>Manual</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- ============================================================
+             EXPLORE OUR BRANDS — five-brand directory between
+             Inventory and Sell. Light surface continues from inventory.
+             ============================================================ -->
+        <section class="section section--brands" id="brands" aria-labelledby="brands-heading" data-reveal>
+            <div class="container">
+                <header class="brands__header">
+                    <span class="eyebrow-stamp">Authorized House</span>
+                    <h2 class="brands__heading" id="brands-heading">
+                        <span class="brands__heading-primary">Explore Our Brands</span>
+                        <span class="brands__heading-secondary">Five Brands. One Floor.</span>
+                    </h2>
+                    <p class="brands__intro">South Florida's authorized dealer for Lamborghini, Pagani, Lotus, Karma, and Czinger — represented under one roof.</p>
+                </header>
+
+                <ul class="brands__grid" aria-label="Authorized brands">
+                    <li class="brand-card">
+                        <a href="#inventory" class="brand-card__link">
+                            <div class="brand-card__media">
+                                <img src="assets/images/lambo_logo.svg" alt="Lamborghini">
+                            </div>
+                            <h3 class="brand-card__name">Lamborghini</h3>
+                            <span class="brand-card__cta">
+                                <span>View Inventory</span>
+                                <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="brand-card">
+                        <a href="#inventory" class="brand-card__link">
+                            <div class="brand-card__media">
+                                <img src="assets/images/pagani%20_logo.svg" alt="Pagani">
+                            </div>
+                            <h3 class="brand-card__name">Pagani</h3>
+                            <span class="brand-card__cta">
+                                <span>View Inventory</span>
+                                <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="brand-card">
+                        <a href="#inventory" class="brand-card__link">
+                            <div class="brand-card__media">
+                                <img src="assets/images/lotus_logo.png" alt="Lotus">
+                            </div>
+                            <h3 class="brand-card__name">Lotus</h3>
+                            <span class="brand-card__cta">
+                                <span>View Inventory</span>
+                                <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="brand-card">
+                        <a href="#inventory" class="brand-card__link">
+                            <div class="brand-card__media">
+                                <img src="assets/images/karma_logo.svg" alt="Karma">
+                            </div>
+                            <h3 class="brand-card__name">Karma</h3>
+                            <span class="brand-card__cta">
+                                <span>View Inventory</span>
+                                <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="brand-card">
+                        <a href="#inventory" class="brand-card__link">
+                            <div class="brand-card__media">
+                                <img src="assets/images/czinger_logo.svg" alt="Czinger">
+                            </div>
+                            <h3 class="brand-card__name">Czinger</h3>
+                            <span class="brand-card__cta">
+                                <span>View Inventory</span>
+                                <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- SELL YOUR VEHICLE — sticky video, band + text slide up on scroll -->
+        <section class="section section--sell" id="sell" aria-labelledby="sell-heading">
+            <div class="sell__sticky">
+                <div class="sell__bg" aria-hidden="true">
+                    <video class="sell__video" autoplay muted loop playsinline preload="metadata">
+                        <source src="assets/videos/sell_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="sell__panel">
+                    <div class="sell__inner">
+                        <div class="sell__text">
+                            <span class="eyebrow-stamp">Sell Your Vehicle</span>
+                            <h2 class="sell__heading" id="sell-heading">
+                                <span class="sell__heading-primary">Selling a</span>
+                                <span class="sell__heading-secondary">Luxury or Exotic Vehicle?</span>
+                            </h2>
+                            <p class="sell__intro">Prestige Imports offers a refined, discreet acquisition experience for owners of premium vehicles. Receive a market evaluation from specialists who understand high-end inventory.</p>
+                        </div>
+                        <a href="#sell" class="sell__cta">
+                            <span>Request a private valuation</span>
+                            <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BEYOND THE SALE — editorial 2-col: heading + 2×2 cards on left,
+             media slab on right. Light bg, sticky 100vh runway, content
+             fades in once section pins (handoff from sell exit). -->
+        <section class="section section--services" id="service" aria-labelledby="services-heading">
+            <div class="services__sticky">
+                <div class="services__bg" aria-hidden="true"></div>
+
+                <div class="services__inner">
+                    <div class="services__col">
+                        <div class="services__text">
+                            <span class="eyebrow-stamp">Services</span>
+                            <h2 class="services__heading" id="services-heading">
+                                <span class="services__heading-primary">Beyond</span>
+                                <span class="services__heading-secondary">the Sale.</span>
+                            </h2>
+                            <p class="services__intro-text">Concierge-level support that extends past the transaction — because the right vehicle deserves the right experience, from delivery through ownership.</p>
+                        </div>
+
+                        <ul class="services__grid" aria-label="Services">
+                            <li class="service">
+                                <span class="service__num">01</span>
+                                <h3 class="service__title">
+                                    <span>Concierge Pickup &amp; Delivery</span>
+                                    <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                                </h3>
+                                <p class="service__body">Over 80% of clients served via door-to-door pickup and delivery. Viewings, acquisitions, and service handled on your schedule.</p>
+                            </li>
+                            <li class="service">
+                                <span class="service__num">02</span>
+                                <h3 class="service__title">
+                                    <span>Enclosed Transport</span>
+                                    <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                                </h3>
+                                <p class="service__body">Enclosed-trailer vehicle transport for nationwide delivery, suited to luxury, exotic, and collector inventory.</p>
+                            </li>
+                            <li class="service">
+                                <span class="service__num">03</span>
+                                <h3 class="service__title">
+                                    <span>Body &amp; Restoration</span>
+                                    <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                                </h3>
+                                <p class="service__body">Premium body work and detail services — paint correction, PPF, and restoration for high-end vehicles.</p>
+                            </li>
+                            <li class="service">
+                                <span class="service__num">04</span>
+                                <h3 class="service__title">
+                                    <span>Warranty Options</span>
+                                    <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                                </h3>
+                                <p class="service__body">Curated extended warranty and coverage options aligned with the value and use profile of premium vehicles.</p>
+                            </li>
+                        </ul>
+
+                        <div class="services__ctas">
+                            <a href="#" class="services__cta">
+                                <span>Schedule appointment</span>
+                                <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="tel:+13059531000" class="services__cta services__cta--ghost">
+                                <span>Speak with a specialist</span>
+                                <i class="ph-thin ph-phone" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="services__media" aria-hidden="true">
+                        <img class="services__media-image" src="assets/images/services.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- NEWS & EVENTS — editorial magazine spread: featured event left,
+             heading + upcoming list right. Hover row → swaps featured. -->
+        <section class="section section--events" id="events" aria-labelledby="events-heading">
+            <div class="events__sticky">
+                <div class="events__bg" aria-hidden="true"></div>
+
+                <div class="events__inner">
+                    <article class="event-featured">
+                        <a href="#" class="event-featured__media" aria-label="Formula 1 Miami Grand Prix">
+                            <img src="assets/images/NEWS%20%26%20EVENTS.jpg" alt="Formula 1 Miami Grand Prix" loading="lazy">
+                        </a>
+                        <div class="event-featured__body">
+                            <div class="event-featured__meta">
+                                <span class="event-featured__date">MAY 04</span>
+                                <span class="event-featured__sep" aria-hidden="true"></span>
+                                <span class="event-featured__cat">Motorsport</span>
+                            </div>
+                            <h3 class="event-featured__title">Formula 1 Miami Grand Prix</h3>
+                            <p class="event-featured__text">Prestige Imports joins the Miami race weekend with curated viewing experiences and exclusive client events at Hard Rock Stadium.</p>
+                            <a href="#" class="event-featured__link">
+                                <span>Read more</span>
+                                <i class="ph-thin ph-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <div class="events__col">
+                        <div class="events__text">
+                            <span class="eyebrow-stamp">News &amp; Events</span>
+                            <h2 class="events__heading" id="events-heading">
+                                <span class="events__heading-primary">From the Paddock to</span>
+                                <span class="events__heading-secondary">the Showroom.</span>
+                            </h2>
+                            <p class="events__intro-text">Motorsport, brand launches, and lifestyle moments that shape the premium automotive calendar.</p>
+                        </div>
+
+                        <ol class="events__list" aria-label="Upcoming events">
+                            <li class="event-row">
+                                <a href="#" class="event-row__link is-active"
+                                   data-event-img="assets/images/NEWS%20%26%20EVENTS.jpg"
+                                   data-event-title="Formula 1 Miami Grand Prix"
+                                   data-event-date="MAY 04"
+                                   data-event-cat="Motorsport"
+                                   data-event-body="Prestige Imports joins the Miami race weekend with curated viewing experiences and exclusive client events at Hard Rock Stadium.">
+                                    <div class="event-row__meta">
+                                        <span class="event-row__date">MAY 04</span>
+                                        <span class="event-row__sep" aria-hidden="true">·</span>
+                                        <span class="event-row__cat">Motorsport</span>
+                                    </div>
+                                    <h4 class="event-row__title">Formula 1 Miami Grand Prix</h4>
+                                    <i class="ph-thin ph-caret-right event-row__arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="event-row">
+                                <a href="#" class="event-row__link"
+                                   data-event-img="assets/images/Moda%20Miami%20Concourse%20d%27Elegance.jpg"
+                                   data-event-title="Moda Miami Concourse d'Elegance"
+                                   data-event-date="APR 15"
+                                   data-event-cat="Concourse"
+                                   data-event-body="A curated gathering of coachbuilt classics, prewar masterpieces, and modern hypercars — the Moda Miami Concourse d'Elegance assembles collector-grade automobiles for a single day in the gardens of the Fontainebleau estate.">
+                                    <div class="event-row__meta">
+                                        <span class="event-row__date">APR 15</span>
+                                        <span class="event-row__sep" aria-hidden="true">·</span>
+                                        <span class="event-row__cat">Concourse</span>
+                                    </div>
+                                    <h4 class="event-row__title">Moda Miami Concourse d'Elegance</h4>
+                                    <i class="ph-thin ph-caret-right event-row__arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="event-row">
+                                <a href="#" class="event-row__link"
+                                   data-event-img="assets/images/2024%20Lamborghini%20Revuelto.jpg"
+                                   data-event-title="Lamborghini Temerario Preview Night"
+                                   data-event-date="MAY 22"
+                                   data-event-cat="Launch"
+                                   data-event-body="A private preview of the all-new Lamborghini Temerario — the next chapter in V8 hybrid hypercar engineering, presented for South Florida clients ahead of public unveiling.">
+                                    <div class="event-row__meta">
+                                        <span class="event-row__date">MAY 22</span>
+                                        <span class="event-row__sep" aria-hidden="true">·</span>
+                                        <span class="event-row__cat">Launch</span>
+                                    </div>
+                                    <h4 class="event-row__title">Lamborghini Temerario Preview Night</h4>
+                                    <i class="ph-thin ph-caret-right event-row__arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="event-row">
+                                <a href="#" class="event-row__link"
+                                   data-event-img="assets/images/2024%20Pagani%20Utopia.webp"
+                                   data-event-title="Pagani Utopia Roadster — Private Showing"
+                                   data-event-date="JUN 10"
+                                   data-event-cat="Private"
+                                   data-event-body="An invitation-only viewing of the Pagani Utopia Roadster — limited-production open-top hypercar, hosted at the Prestige Imports North Miami Beach showroom for collectors and existing Pagani owners.">
+                                    <div class="event-row__meta">
+                                        <span class="event-row__date">JUN 10</span>
+                                        <span class="event-row__sep" aria-hidden="true">·</span>
+                                        <span class="event-row__cat">Private</span>
+                                    </div>
+                                    <h4 class="event-row__title">Pagani Utopia Roadster — Private Showing</h4>
+                                    <i class="ph-thin ph-caret-right event-row__arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Cinematic break — full-bleed image, slow fade-in +
+             settle as it scrolls into view. -->
+        <div class="section-break" data-reveal aria-hidden="true">
+            <img src="assets/images/brake.jpg" alt="" loading="lazy">
+        </div>
+
+
+        <!-- ============================================================
+             GOOGLE REVIEWS — drag-able horizontal stripe of client
+             quotes. Center 3 cards are fully active; cards on the
+             edges fade out via mask gradient. "Leave a Review" pill
+             matches the hero contact-link styling.
+             ============================================================ -->
+        <section class="section section--reviews" id="reviews" data-reveal>
+            <div class="reviews__inner">
+                <header class="reviews__header">
+                    <div class="reviews__meta">
+                        <i class="ph-fill ph-star reviews__icon" aria-hidden="true"></i>
+                        <span class="reviews__rating">4.9</span>
+                        <span class="reviews__divider" aria-hidden="true"></span>
+                        <span class="reviews__label">Google Reviews</span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Prestige+Imports" target="_blank" rel="noopener" class="reviews__cta">
+                        <i class="ph-thin ph-pencil-simple-line" aria-hidden="true"></i>
+                        <span>Leave a Review</span>
+                    </a>
+                </header>
+
+                <div class="reviews__track" data-reviews-track>
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">A genuinely first-class experience from first call to delivery. They handled every detail and the car arrived in better condition than I expected.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">M. Hartwell</span>
+                            <span class="review-card__date">3 weeks ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">Discreet, knowledgeable, and refreshingly honest. They sourced exactly what I was looking for and the paperwork was painless.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">D. Castellanos</span>
+                            <span class="review-card__date">1 month ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">Bought my Lotus through Prestige and they made the whole process feel effortless. Door-to-door delivery to the Northeast was flawless.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">A. Whitford</span>
+                            <span class="review-card__date">2 months ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">They sold my Aventador for me, handled the listing privately, and got me a number I didn't think was possible. Real professionals.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">R. Linden</span>
+                            <span class="review-card__date">2 months ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">Service department is on another level — they treat the car the way you would. Trust them with anything in my collection.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">P. Sloan</span>
+                            <span class="review-card__date">3 months ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">Second purchase with them. The first was a Karma, this time a Pagani. Same level of care, same quiet competence. Hard to find elsewhere.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">J. Okafor</span>
+                            <span class="review-card__date">4 months ago</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-card__text">I've worked with most of the major exotic dealers on the East Coast. Prestige stands apart — no pressure, no theatrics, just exceptional inventory and follow-through.</p>
+                        <div class="review-card__author">
+                            <span class="review-card__name">E. Voss</span>
+                            <span class="review-card__date">5 months ago</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             PRESTIGE DIFFERENCE — combo of v4 editorial spread layout
+             (heading + founder portrait stacked left, dropcap manifesto
+             + stats + See More CTA right) on top of v3 "1977" typographic
+             atmosphere (huge italic year as low-opacity watermark).
+             ============================================================ -->
+        <section class="section section--difference" id="about" aria-labelledby="diff-heading" data-reveal>
+            <div class="diff__bg" aria-hidden="true"></div>
+            <div class="diff__year" aria-hidden="true">1977</div>
+            <div class="diff__inner">
+
+                <header class="diff__header">
+                    <span class="eyebrow-stamp eyebrow-stamp--light">The Prestige Difference</span>
+                    <h2 class="diff__heading" id="diff-heading">
+                        <span class="diff__heading-primary">A Different Kind of Dealership.</span>
+                        <span class="diff__heading-secondary">Since 1977.</span>
+                    </h2>
+                    <div class="diff__rule" aria-hidden="true"></div>
+                </header>
+
+                <div class="diff__body">
+                    <div class="diff__manifesto">
+                        <p class="diff__para diff__para--lead"><span class="diff__dropcap">A</span> second-generation family business, Prestige Imports has served South Florida's luxury automotive community since 1977 — and earned a reputation as one of America's premier exotic retailers. Five premium franchises — Lamborghini, Pagani, Lotus, Karma, and Czinger — sit alongside a curated inventory of pre-owned exotics including Ferrari, Bentley, Mercedes, Porsche, Rolls-Royce, and Bugatti.</p>
+                        <p class="diff__para">We don't just sell cars. We provide lifestyles — from acquisition and nationwide delivery through long-term ownership support. For clients who also prefer the water, we offer VanDutch luxury marine alongside our automotive portfolio.</p>
+                        <a href="#" class="diff__readmore">
+                            <span>Read more</span>
+                            <i class="ph-thin ph-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <aside class="diff__sidebar" aria-label="At a glance">
+                        <ul class="diff__stats">
+                            <li>
+                                <span class="diff__stat-label">Established</span>
+                                <span class="diff__stat-value">1977</span>
+                            </li>
+                            <li>
+                                <span class="diff__stat-label">Ownership</span>
+                                <span class="diff__stat-value">Family · 2nd Gen</span>
+                            </li>
+                            <li>
+                                <span class="diff__stat-label">Franchises</span>
+                                <span class="diff__stat-value">5 Luxury Brands</span>
+                            </li>
+                            <li>
+                                <span class="diff__stat-label">Reach</span>
+                                <span class="diff__stat-value">Nationwide</span>
+                            </li>
+                        </ul>
+
+                        <div class="diff__ctas">
+                            <a href="#" class="diff__cta">
+                                <span>See More</span>
+                            </a>
+                            <a href="tel:+13059531000" class="diff__cta diff__cta--ghost">
+                                <i class="ph-thin ph-phone" aria-hidden="true"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER — dark ink continuation. 4-col link grid + bottom bar
+         with copyright, social icons, legal.
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+
+            <div class="site-footer__brand">
+                <a href="index_2.html" class="site-footer__logo" aria-label="Prestige Imports — Home">
+                    <img src="assets/images/logo.svg" alt="Prestige Imports">
+                </a>
+                <p class="site-footer__tagline">A second-generation, family-owned dealership for luxury, exotic, and collector automobiles. South Florida, since 1977.</p>
+            </div>
+
+            <div class="site-footer__rule" aria-hidden="true"></div>
+
+            <div class="site-footer__cols">
+
+                <div class="site-footer__col">
+                    <h3 class="site-footer__col-title">Inventory</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="#inventory">All Inventory</a></li>
+                        <li><a href="#inventory">New</a></li>
+                        <li><a href="#inventory">Pre-Owned</a></li>
+                        <li><a href="#inventory">Sold</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3 class="site-footer__col-title">Visit</h3>
+                    <address class="site-footer__address">
+                        <p>14780 Biscayne Blvd<br>North Miami Beach, FL 33181</p>
+                        <p>
+                            <a href="tel:+13059531000">+1 (305) 953-1000</a>
+                        </p>
+                    </address>
+                    <p class="site-footer__hours">
+                        <span>Mon — Sat &middot; 9–6</span>
+                        <span>Sun &middot; By appointment</span>
+                    </p>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3 class="site-footer__col-title">Service</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="#service">About Service</a></li>
+                        <li><a href="#service">Schedule Appointment</a></li>
+                        <li><a href="#service">Parts</a></li>
+                        <li><a href="#sell">Sell Your Vehicle</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__col">
+                    <h3 class="site-footer__col-title">Connect</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Our Team</a></li>
+                        <li><a href="#about">Heritage</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="site-footer__social" aria-label="Social media">
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <i class="ph-thin ph-instagram-logo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                                <i class="ph-thin ph-facebook-logo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                                <i class="ph-thin ph-youtube-logo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="ph-thin ph-linkedin-logo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="site-footer__rule" aria-hidden="true"></div>
+
+            <div class="site-footer__bottom">
+                <p class="site-footer__copy">&copy; <span id="footer-year"></span> Prestige Imports. All rights reserved.</p>
+                <ul class="site-footer__legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <p class="site-footer__powered">Powered by <a href="https://allautonetwork.com" target="_blank" rel="noopener">All Auto Network</a></p>
+
+        </div>
+    </footer>
+
+    <a href="#top" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="ph ph-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('back-to-top');
+            if (!btn) return;
+            var toggle = function () {
+                if (window.scrollY > 400) btn.classList.add('is-visible');
+                else btn.classList.remove('is-visible');
+            };
+            window.addEventListener('scroll', toggle, { passive: true });
+            toggle();
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
