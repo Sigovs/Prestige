@@ -1,0 +1,238 @@
+/* ============================================================
+   CONSIGN WITH PRESTIGE — additions on top of sell-your-car.css
+   Only what the sell page does not already have: the 3-step form,
+   selects/textareas, the photo pair and the 10-make list.
+   Every value comes from the tokens in sell-your-car.css.
+   ============================================================ */
+
+.sr {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- Hero: the form is taller than the sell page's, so the text column stays at the top of it ---------- */
+.page-consign .hero__inner { align-items: start; }
+.page-consign .hero__content { padding-top: var(--sp-6); }
+
+/* ---------- Step indicator ---------- */
+.csteps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.csteps__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 2px solid var(--border-input);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.083em;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    transition: color 0.18s ease, border-color 0.18s ease;
+}
+.csteps__item span {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: inherit;
+}
+.csteps__item.is-on,
+.csteps__item.is-done { color: var(--text-primary); }
+.csteps__item.is-on   { border-top-color: #ffffff; }
+.csteps__item.is-done { border-top-color: var(--text-secondary); }
+
+/* ---------- Steps ---------- */
+.cstep {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+}
+.cstep[hidden] { display: none; }
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--sp-3);
+}
+
+/* Selects: same underline field as the inputs, with a thin chevron */
+.form__select {
+    cursor: pointer;
+    padding-right: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23edeae4' stroke-width='1.2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    text-overflow: ellipsis;
+}
+.form__select option { color: #ffffff; background-color: var(--bg-card); }
+
+.form__textarea {
+    resize: vertical;
+    min-height: 58px;
+    line-height: 1.5;
+    padding: 18px 0 12px;
+}
+
+/* Invalid after a Next/Submit attempt */
+.form__input.is-invalid { border-bottom-color: #d27a6a; }
+
+/* Prev / Next (and Prev / Submit) */
+.cstep__nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+.btn--line {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+}
+.btn--line:hover { border-color: var(--text-primary); }
+.form .cstep__nav .btn { width: 100%; }
+
+.form__note,
+.form__consent,
+.form__status {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+.form__status:empty { display: none; }
+.form__status { color: var(--text-primary); }
+
+/* ---------- How it works: 3 steps, not 4 ---------- */
+.process-steps--3 { grid-template-columns: repeat(3, 1fr); }
+
+/* ---------- Retail Your Ride: two portrait photos side by side ---------- */
+.section--ride {
+    background: var(--bg-page);
+}
+.ride__pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4);
+}
+.ride__ph {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg-ph);
+}
+.ride__ph img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 14%; /* the source frames fade to black in their lower fifth */
+}
+
+.ride__line { display: block; }
+
+/* ---------- We're Looking For: 10 makes, 5 per row ---------- */
+.looking-list { grid-template-columns: repeat(5, 1fr); border-top: none; }
+.looking-list .trust-stat {
+    padding: var(--sp-4) 0 var(--sp-4) var(--sp-4);
+    border-top: 1px solid var(--border-dim);
+}
+.looking-list .trust-stat:nth-child(5n + 1) { padding-left: 0; border-left: none; }
+.looking-list .trust-stat__value { font-size: 15px; letter-spacing: 0.04em; }
+
+.looking__cta { margin: 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+    .page-consign .hero__content { padding-top: 0; }
+    .process-steps--3 { grid-template-columns: 1fr 1fr 1fr; }
+    .looking-list { grid-template-columns: repeat(2, 1fr); }
+    .looking-list .trust-stat,
+    .looking-list .trust-stat:nth-child(odd) { border-top: 1px solid var(--border-dim); }
+    .looking-list .trust-stat:nth-child(5n + 1) { padding-left: var(--sp-3); border-left: 1px solid var(--border-dim); }
+    .looking-list .trust-stat:nth-child(odd) { padding-left: 0; border-left: none; }
+}
+@media (max-width: 800px) {
+    .process-steps--3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .ride__pair { grid-template-columns: 1fr; gap: var(--sp-2); }
+    .looking-list { grid-template-columns: repeat(2, 1fr); }
+    .looking-list .trust-stat { padding: var(--sp-3) 0 var(--sp-3) var(--sp-3); border-top: 1px solid var(--border-dim); border-left: 1px solid var(--border-dim) !important; }
+    .looking-list .trust-stat:nth-child(odd) { padding-left: 0; border-left: none !important; }
+    .looking-list .trust-stat:first-child { border-top: 1px solid var(--border-dim); }
+}
+@media (max-width: 420px) {
+    .form__row { grid-template-columns: 1fr; }
+    .cstep__nav { grid-template-columns: 1fr 1.6fr; }
+}
+
+/* ---------- Image upload (step 3) — the demo's "Upload Images (up to 8) / Drag and Drop Here / Upload", in our language ---------- */
+.cup { margin-top: var(--sp-2); display: flex; flex-direction: column; gap: 10px; }
+.cup__zone {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "icon label" "icon hint" "btn btn";
+    align-items: center;
+    gap: 4px var(--sp-2);
+    padding: var(--sp-3);
+    border: 1px dashed var(--border-input);
+    border-radius: 3px;
+    transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+.cup__zone.is-over { border-color: var(--text-primary); background-color: rgba(255, 255, 255, 0.04); }
+.cup.is-full .cup__zone { opacity: 0.45; }
+.cup__icon { grid-area: icon; font-size: 34px; color: var(--text-secondary); line-height: 1; }
+.cup__label {
+    grid-area: label;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.083em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+.cup__hint { grid-area: hint; margin: 0; font-size: 13px; font-weight: 300; color: var(--text-secondary); }
+.cup__btn { grid-area: btn; width: 100%; height: 40px; margin-top: 12px; padding: 10px 18px; font-size: 12px; }
+.cup__label { white-space: nowrap; }
+.cup__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+.cup__list:empty { display: none; }
+.cup__item { position: relative; aspect-ratio: 4 / 3; border-radius: 2px; overflow: hidden; background-color: var(--bg-ph); }
+.cup__item img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.cup__rm {
+    position: absolute;
+    top: 4px; right: 4px;
+    width: 24px; height: 24px;
+    display: grid; place-items: center;
+    border: 0; border-radius: 50%;
+    background-color: rgba(7, 10, 11, 0.78);
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cup__rm:hover, .cup__rm:focus-visible { background-color: var(--dark-btn); outline: 1px solid var(--text-primary); }
+.cup__count { margin: 0; font-size: 12px; font-weight: 300; color: var(--text-secondary); }
+.cup__count:empty { display: none; }
